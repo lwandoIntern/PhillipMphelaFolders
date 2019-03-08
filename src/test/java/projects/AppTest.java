@@ -14,7 +14,11 @@ public class AppTest
     /**
      * Rigorous Test :-)
      */
-    MainTest test = new MainTest();
+    MainTest test;
+    @Before
+    public void setUp(){
+     test = new MainTest();
+    }
 
     @Test
     public void add()
